@@ -73,16 +73,16 @@ export function LoginTemplate() {
         <div className="card">
           {state && <RegistrarAdmin setState={() => setState(!state)} />}
 
-          <Titulo>StockPRO</Titulo>
+          <Titulo>Controla</Titulo>
           {stateInicio && (
             <TextoStateInicio>datos incorrectos</TextoStateInicio>
           )}
           <span className="ayuda">
             {" "}
-            Puedes crear una cuenta nueva ó <br></br>solicitar a tu empleador
+            Puedes crear una cuenta nueva ó <br></br>solicitar al administrador
             una. <MdOutlineInfo />
           </span>
-          <p className="frase">Controla tu inventario.</p>
+          <p className="frase">Por Joselo Digital</p>
           <form onSubmit={handleSubmit(iniciar)}>
             <InputText icono={<v.iconoemail />}>
               <input
